@@ -5,7 +5,7 @@ import React from "react";
 const ContactPage = () => {
   return (
     <Container className="py-5 ">
-      <Title>ContactPage</Title>
+      <Title className="text-2xl">ContactPage</Title>
     </Container>
   );
 };
