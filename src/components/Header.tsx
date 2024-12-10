@@ -5,7 +5,7 @@ import Logo from "./Logo";
 import { NavbarData } from "../../constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import MobileNavigation from "./MobileNavigation";
 const Header = () => {
   const Pathname = usePathname();
   return (
@@ -29,7 +29,17 @@ const Header = () => {
               />
             </Link>
           ))}
+          <Link
+            className="bg-lightSky/10 text-sm px-4 py-2 rounded-md
+             hover:bg-lightSky hover:text-bodyColor hoverEffect"
+            href={"/resume.pdf"}
+            target="_blank"
+            rel="noopener noreferrer "
+          >
+            Hire Me
+          </Link>
         </div>
+        <MobileNavigation />
       </Container>
     </div>
   );
