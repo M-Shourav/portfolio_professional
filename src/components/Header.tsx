@@ -9,7 +9,7 @@ import MobileNavigation from "./MobileNavigation";
 const Header = () => {
   const Pathname = usePathname();
   return (
-    <div className="w-full h-20 bg-bodyColor text-white/80">
+    <div className="w-full h-20 bg-bodyColor text-white/80 border-b border-b-hoverColor/50">
       <Container className="w-full h-full flex items-center justify-between gap-7">
         <Logo title="Masum" subtitle="." />
         <div className="hidden md:inline-flex items-center gap-7 text-sm font-medium uppercase tracking-wide">
@@ -32,14 +32,15 @@ const Header = () => {
           <Link
             className="bg-lightSky/10 text-sm px-4 py-2 rounded-md
              hover:bg-lightSky hover:text-bodyColor hoverEffect"
-            href={"/resume.pdf"}
-            target="_blank"
+            href={"/contact"}
             rel="noopener noreferrer "
           >
             Hire Me
           </Link>
         </div>
-        <MobileNavigation />
+        <div className="inline-flex md:hidden">
+          <MobileNavigation />
+        </div>
       </Container>
     </div>
   );

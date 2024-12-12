@@ -26,8 +26,8 @@ const MobileNavigation = () => {
         onClick={handleHamburger}
         className={`${
           isOpen
-            ? "fixed top-0 left-0 w-[65%] px-4 py-6 bg-bodyColor h-screen z-50 duration-500 ease-in"
-            : "fixed top-0 left-[-100%] duration-700 ease-in"
+            ? "fixed top-0 left-0 w-[65%] px-4 py-6 bg-bodyColor border-r border-r-hoverColor/20 h-screen z-50 duration-700 ease-in-out"
+            : "fixed top-0 left-[-100%] duration-1000 ease-in"
         }`}
       >
         <div className="w-full h-screen">
@@ -61,7 +61,7 @@ const MobileNavigation = () => {
             <Link
               className="bg-lightSky/10 text-sm px-4 py-2 rounded-md
              hover:bg-lightSky hover:text-bodyColor hoverEffect"
-              href={"/resume.pdf"}
+              href={"/contact"}
               target="_blank"
               rel="noopener noreferrer "
             >
@@ -74,7 +74,7 @@ const MobileNavigation = () => {
       {isOpen && (
         <div
           onClick={handleHamburger}
-          className="fixed inset-0 bg-black/50 z-20"
+          className="fixed inset-0 bg-bodyColor z-20"
         ></div>
       )}
     </div>
