@@ -1,2 +1,2 @@
-import profilePhoto from "@/assets/images/masum1.png";
+import profilePhoto from "@/assets/images/profile-images.png";
 export { profilePhoto };
