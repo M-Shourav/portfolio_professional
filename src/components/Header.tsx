@@ -2,10 +2,10 @@
 import React from "react";
 import Container from "./Container";
 import Logo from "./Logo";
-import { NavbarData } from "../../constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileNavigation from "./MobileNavigation";
+import { NavbarData } from "@/constants";
 const Header = () => {
   const Pathname = usePathname();
   return (

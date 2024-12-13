@@ -6,9 +6,9 @@ interface Props {
 }
 const Title = ({ children, className }: Props) => {
   return (
-    <h1 className={cn("text-xl font-semibold tracking-wide", className)}>
+    <h2 className={cn("text-xl font-semibold tracking-wide", className)}>
       {children}
-    </h1>
+    </h2>
   );
 };
 

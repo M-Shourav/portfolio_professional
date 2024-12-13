@@ -4,7 +4,7 @@ import { profilePhoto } from "@/assets/images";
 import { motion } from "framer-motion";
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative flex items-center justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -26,9 +26,9 @@ const Photo = () => {
               ease: "easeInOut",
             },
           }}
-          className="w-[250px] h-[250px] flex items-center
-           justify-center xl:w-[400px] xl:h-[400px] mix-blend-lighten 
-           absolute  left-6"
+          className="w-[300px] h-[300px] flex items-center
+           justify-center xl:w-[450px] xl:h-[450px] mix-blend-lighten 
+           absolute"
         >
           <Image
             src={profilePhoto}

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import Logo from "./Logo";
-import { NavbarData } from "../../constants";
+import { NavbarData } from "../constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
