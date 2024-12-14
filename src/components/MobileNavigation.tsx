@@ -16,7 +16,7 @@ const MobileNavigation = () => {
     <div className="inline-flex md:hidden">
       <button
         onClick={handleHamburger}
-        className="  text-xl
+        className="text-3xl
          hover:text-hoverColor hoverEffect"
       >
         <IoMdMenu />

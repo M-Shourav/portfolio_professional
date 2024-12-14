@@ -149,16 +149,16 @@ const ResumePage = () => {
                       },
                     }}
                     key={index}
-                    className="border border-lightSky/20 rounded-xl
+                    className=" border border-lightSky/20 rounded-xl
                   p-6"
                   >
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4 justify-between mb-4">
                       <div className="flex flex-col gap-2">
                         <h3 className="text-lg font-semibold">{item?.role}</h3>
                         <p className="text-gray-400">{item?.company}</p>
                       </div>
 
-                      <div className="flex flex-col md:flex-row items-center gap-1 text-gray-400">
+                      <div className="flex items-center gap-2 text-gray-400">
                         <span>
                           <FaCalendarAlt />
                         </span>
@@ -168,11 +168,11 @@ const ResumePage = () => {
                     <p className="text-sm md:text-base mb-4 text-white/90 leading-7 tracking-wide">
                       {item?.description}
                     </p>
-                    <div className="flex items-center gap-3">
+                    <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3">
                       {item?.highlights.map((item, index) => (
                         <div
-                          className="bg-white/80 text-bodyColor rounded-xl
-                           text-xs text-center px-2 py-1 font-semibold"
+                          className="w-full flex items-center justify-center py-2 bg-white/80 text-bodyColor rounded-xl
+                           text-sm md:text-base  font-semibold"
                           key={index}
                         >
                           <p>{item}</p>
