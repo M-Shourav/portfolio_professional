@@ -78,6 +78,19 @@ const tabContent = {
         des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
         skills: ["Node.js", "MongoDB", "Express", "AWS", "Schema"],
       },
+      {
+        role: "Tools & Others",
+        des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
+        skills: [
+          "Git",
+          "Github",
+          "Vs.Code",
+          "Npm/Yarn",
+          "Vercel",
+          "Figma",
+          "Canva",
+        ],
+      },
     ],
   },
   about: {
@@ -171,8 +184,8 @@ const ResumePage = () => {
                     <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3">
                       {item?.highlights.map((item, index) => (
                         <div
-                          className="w-full flex items-center justify-center py-2 bg-white/80 text-bodyColor rounded-xl
-                           text-sm md:text-base  font-semibold"
+                          className="w-full flex items-center justify-center py-1.5 bg-white/80 text-bodyColor rounded-xl
+                           text-xs md:text-sm font-semibold"
                           key={index}
                         >
                           <p>{item}</p>
@@ -194,10 +207,57 @@ const ResumePage = () => {
                     duration: 0.5,
                   },
                 }}
-                className="text-xl md:text-2xl font-semibold tracking-wide text-lightSky/90"
+                className="text-xl md:text-2xl mb-6 font-semibold tracking-wide text-lightSky/90"
               >
                 {tabContent?.education.title}
               </motion.h2>
+              <div className="space-y-6 w-full">
+                {tabContent?.education.items.map((item, index) => (
+                  <motion.div
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{
+                      y: 0,
+                      opacity: 1,
+                      transition: {
+                        duration: 0.5,
+                      },
+                    }}
+                    key={index}
+                    className=" border border-lightSky/20 rounded-xl
+                  p-6"
+                  >
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4 justify-between mb-4">
+                      <div className="flex flex-col gap-2">
+                        <h3 className="text-lg font-semibold">
+                          {item?.degree}
+                        </h3>
+                        <p className="text-gray-400">{item?.institute}</p>
+                      </div>
+
+                      <div className="flex items-center gap-2 text-gray-400">
+                        <span>
+                          <FaCalendarAlt />
+                        </span>
+                        <p>{item?.period}</p>
+                      </div>
+                    </div>
+                    <p className="text-sm md:text-base mb-4 text-white/90 leading-7 tracking-wide">
+                      {item?.description}
+                    </p>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                      {item?.achievement.map((item, index) => (
+                        <div
+                          className="p-2 flex items-center justify-center py-1.5 bg-white/80 text-bodyColor rounded-xl
+                           text-xs md:text-sm font-semibold"
+                          key={index}
+                        >
+                          <p>{item}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </TabsContent>
             {/* skills */}
             <TabsContent value="skills">
@@ -210,10 +270,45 @@ const ResumePage = () => {
                     duration: 0.5,
                   },
                 }}
-                className="text-xl md:text-2xl font-semibold tracking-wide text-lightSky/90"
+                className="text-xl md:text-2xl mb-6 font-semibold tracking-wide text-lightSky/90"
               >
                 {tabContent?.skills.title}
               </motion.h2>
+              <div className="space-y-6 w-full">
+                {tabContent?.skills.items.map((item, index) => (
+                  <motion.div
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{
+                      y: 0,
+                      opacity: 1,
+                      transition: {
+                        duration: 0.5,
+                      },
+                    }}
+                    key={index}
+                    className=" border border-lightSky/20 rounded-xl
+                  p-6"
+                  >
+                    <div className="w-full flex flex-col md:flex-row items-center gap-4 justify-between mb-4">
+                      <div className="flex flex-col gap-2">
+                        <h3 className="text-lg font-semibold">{item?.role}</h3>
+                        <p className="text-gray-400">{item?.des}</p>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-3 md:grid-cols-5 gap-3">
+                      {item?.skills.map((item, index) => (
+                        <div
+                          className="p-2 flex items-center justify-center py-1.5 bg-white/80 text-bodyColor rounded-xl
+                           text-xs md:text-sm font-semibold"
+                          key={index}
+                        >
+                          <p>{item}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </TabsContent>
             {/* about */}
             <TabsContent value="about">
@@ -226,10 +321,54 @@ const ResumePage = () => {
                     duration: 0.5,
                   },
                 }}
-                className="text-xl md:text-2xl font-semibold tracking-wide text-lightSky/90"
+                className="text-xl mb-6 md:text-2xl font-semibold tracking-wide text-lightSky/90"
               >
                 {tabContent?.about.title}
               </motion.h2>
+              <motion.div
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="border border-lightSky/20 rounded-xl p-6"
+              >
+                <div className="flex flex-col gap-y-3">
+                  <p className="text-base md:text-lg text-gray-400 tracking-wider leading-7">
+                    {tabContent?.about.bio}
+                  </p>
+                  <div className="flex flex-col gap-y-2">
+                    <h3 className="text-lg md:text-xl font-semibold text-white">
+                      Interests
+                    </h3>
+                    <div className="grid grid-cols-2  md:grid-cols-3 items-center gap-2">
+                      {tabContent?.about.Interests.map((item, index) => (
+                        <div
+                          key={index}
+                          className="text-xs md:text-sm font-semibold bg-white/80 text-bodyColor flex 
+                        items-center justify-center py-1.5 rounded-xl"
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-y-2 mt-3">
+                    <h3 className="text-lg md:text-xl font-semibold text-white">
+                      Languages
+                    </h3>
+                    <div className="grid grid-cols-2  md:grid-cols-3 items-center gap-2">
+                      {tabContent?.about.Languages.map((item, index) => (
+                        <div
+                          key={index}
+                          className="text-xs md:text-sm font-semibold bg-white/80 text-bodyColor flex 
+                        items-center justify-center py-1.5 rounded-xl"
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
             </TabsContent>
           </div>
         </Tabs>
