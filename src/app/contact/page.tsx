@@ -11,7 +11,7 @@ const ContactPage = () => {
       <PageLayout>
         <div className="w-full h-full">
           <Title className="md:text-3xl text-lightSky">
-            Let's work together
+            Let&#39;s work together
           </Title>
           <p className="max-w-2xl text-sm md:text-lg text-white/60 tracking-wider">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
