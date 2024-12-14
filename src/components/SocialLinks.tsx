@@ -5,7 +5,7 @@ const socials = [
   {
     id: 1,
     icon: <FaGithub />,
-    path: "",
+    path: "https://github.com/M-Shourav",
   },
   {
     id: 2,
@@ -15,12 +15,12 @@ const socials = [
   {
     id: 3,
     icon: <FaYoutube />,
-    path: "",
+    path: "https://www.youtube.com/@MasumAhmed-cd",
   },
   {
     id: 4,
     icon: <FaXTwitter />,
-    path: "",
+    path: "https://x.com/MasumAh68543",
   },
 ];
 const SocialLinks = () => {
@@ -30,6 +30,7 @@ const SocialLinks = () => {
         <Link
           key={item?.id}
           href={item?.path}
+          target="_blank"
           className="w-9 h-9 flex items-center justify-center
            text-lightSky/80 hover:text-lightSky border text-base
             border-lightSky/80 hover:border-lightSky rounded-full
