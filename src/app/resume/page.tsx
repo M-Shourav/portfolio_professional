@@ -101,18 +101,21 @@ const ResumePage = () => {
           className="flex flex-col md:flex-row  gap-5"
         >
           <TabsList
-            className="w-full md:w-[300px] md:min-h-[43vh] flex flex-row 
-          md:flex-col items-start gap-4"
+            className="w-full h-full md:w-[300px] md:min-h-[43vh]
+          grid grid-cols-2 md:grid-cols-1 items-center gap-5"
           >
             {tabsMenu?.map((item) => (
               <TabsTrigger
                 key={item?.title}
                 value={item?.value}
-                className="w-full py-2.5 text-xs md:text-base flex flex-col items-start md:px-24 bg-white/10 hover:bg-lightSky/20 duration-300
-                data-[state=active]:bg-lightSky data-[state=active]:text-black"
+                className="w-full py-2.5 text-sm md:text-base flex
+                 flex-col items-center md:items-start md:px-24
+                 bg-white/10 hover:bg-lightSky/20 duration-300
+                data-[state=active]:bg-lightSky rounded-md
+                 data-[state=active]:text-black"
               >
-                <div className="flex items-center gap-1 md:gap-3">
-                  <span className="">{item?.icon}</span>
+                <div className="flex items-center justify-center gap-1 md:gap-3">
+                  <span className="text-lg">{item?.icon}</span>
                   {item?.title}
                 </div>
               </TabsTrigger>
@@ -155,21 +158,21 @@ const ResumePage = () => {
                         <p className="text-gray-400">{item?.company}</p>
                       </div>
 
-                      <div className="flex items-center gap-1 text-gray-400">
+                      <div className="flex flex-col md:flex-row items-center gap-1 text-gray-400">
                         <span>
                           <FaCalendarAlt />
                         </span>
                         <p>{item?.period}</p>
                       </div>
                     </div>
-                    <p className="text-base mb-4 text-white/90 leading-7 tracking-wide">
+                    <p className="text-sm md:text-base mb-4 text-white/90 leading-7 tracking-wide">
                       {item?.description}
                     </p>
                     <div className="flex items-center gap-3">
                       {item?.highlights.map((item, index) => (
                         <div
-                          className="bg-white/80 text-bodyColor rounded-full
-                           text-xs py-1.5 px-2.5 text-center  font-semibold"
+                          className="bg-white/80 text-bodyColor rounded-xl
+                           text-xs text-center px-2 py-1 font-semibold"
                           key={index}
                         >
                           <p>{item}</p>
