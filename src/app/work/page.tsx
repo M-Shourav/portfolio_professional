@@ -59,7 +59,6 @@ const project = [
 ];
 
 const WorkPage = () => {
-  const [CurrentIndex, setCurrentIndex] = useState(0);
   const handleSlideChange = (index: number) => {
     handleSlideChange(index);
   };

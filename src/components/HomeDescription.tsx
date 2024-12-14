@@ -10,7 +10,7 @@ const HomeDescription = () => {
   const { displayedText, IsComplete } = useTypeWriter(description, 30);
   useEffect(() => {
     setHasLoaded(true);
-  });
+  }, [hasLoaded]);
   return (
     <motion.p
       className="max-w-[500px]  font-normal leading-7 min-h-30"
