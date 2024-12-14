@@ -1,4 +1,3 @@
-"use client";
 import { project_1, project_2, project_3, project_4 } from "@/assets/images";
 import PageLayout from "@/components/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,7 +11,6 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { FiGithub } from "react-icons/fi";
 
 const project = [
