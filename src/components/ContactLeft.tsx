@@ -62,7 +62,7 @@ const ContactLeft = () => {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="py-10 flex flex-col gap-2 items-center justify-center"
+          className=" py-10 flex flex-col gap-2 items-center justify-center"
         >
           <p className="text-xl font-semibold text-green-500">{status}</p>
           <p className="text-base text-green-800 font-semibold max-w-[400px] text-center">
