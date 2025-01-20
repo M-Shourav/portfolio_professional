@@ -17,20 +17,15 @@ const tabContent = {
     title: "Professional Experience",
     items: [
       {
-        role: " Frontend Developer",
-        company: "Tech Solution Inc",
-        period: "2021-present",
-        description:
-          "Led the development of multiple React-based web applications, improving performance by 40%. Mentored junior developers and implemented best practices for code quality.",
-        highlights: ["React", "Next.js", "TypeScript", "Team LeaderShip"],
-      },
-      {
-        role: " Full Stack Developer",
-        company: "Digital Innovations Ltd",
-        period: "2018-2021",
-        description:
-          "Developed and maintained full-stack applications using modern JavaScript frameworks. Collaborated with cross-functional teams to deliver high-quality solutions.",
-        highlights: ["Node.js", "React", "MongoDB", "AWS"],
+        role: "Career Objective",
+        description: `Passionate and skilled MERN stack developer with a
+        strong foundation in MongoDB, Express.js, React, and
+        Node.js. Seeking to leverage my expertise in full-stack
+        development to contribute to innovative projects and
+        drive success at a forward-thinking organization.
+        Committed to delivering high-quality, scalable web
+        applications and continuously enhancing my technical skills.`,
+        highlights: [],
       },
     ],
   },
@@ -38,23 +33,33 @@ const tabContent = {
     title: "Educational Background",
     items: [
       {
+        degree: "MERN Stack Development Course",
+        institute: "PeopleNTech IT Institute ",
+        period: "2024-Present",
+        description: `I have successfully completed the frontend part of 
+        the MERN stack development course at PeopleNTech, where I gained 
+        hands-on experience with React.js, HTML, CSS, and JavaScript. 
+        The course focused on building responsive and dynamic user 
+        interfaces, enhancing my skills in modern frontend technologies. 
+        I am now equipped to develop seamless, interactive web applications 
+        with a strong focus on user experience.`,
+        achievement: [
+          "React.js",
+          "Responsive Web Design",
+          "UI/UX Design",
+          "Frontend Project Development",
+        ],
+      },
+      {
         degree: "Diploma In Engineering",
         institute: "Dinajpur Polytechnic Institute ",
         period: "2020-2024",
         description:
-          "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors.",
-        achievement: ["3.70 Cgpa", "Research Publication", "Dean's List"],
-      },
-      {
-        degree: "Secondary School Certificate",
-        institute: "Chilahati Merchant&#39;s High School ",
-        period: "2015-2020",
-        description:
-          "Foundation in computer science principles, data structures, and algorithms.",
+          "I am completing my Diploma in Computer Science from Dinajpur Polytechnic, where I have gained a strong foundation in programming, networking, and computer systems. The program has equipped me with essential technical skills to tackle various challenges in the IT field. I am passionate about applying my knowledge to real-world projects and further advancing my career in technology.",
         achievement: [
-          "4.72 Gpa",
-          "Academic Excellence Award",
-          "Programming Club Lead",
+          "Web Development Skills",
+          "Technological Problem Solving",
+          "Team Collaboration",
         ],
       },
     ],
@@ -64,7 +69,7 @@ const tabContent = {
     items: [
       {
         role: "Frontend Development",
-        des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
+        des: "I have developed strong skills in frontend development, focusing on React.js, HTML, CSS, and JavaScript to build dynamic and responsive user interfaces. I have gained hands-on experience in creating seamless, mobile-friendly websites with an emphasis on user experience. My projects showcase my ability to transform design concepts into functional, interactive web applications.",
         skills: [
           "React",
           "Next.js",
@@ -75,12 +80,12 @@ const tabContent = {
       },
       {
         role: "Backend Development",
-        des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
+        des: "I have gained foundational knowledge in backend development using Node.js and Express.js, focusing on building RESTful APIs and handling server-side logic. I have learned to manage databases with MongoDB, ensuring efficient data storage and retrieval. My backend skills allow me to create dynamic, scalable web applications that integrate seamlessly with the frontend.",
         skills: ["Node.js", "MongoDB", "Express", "AWS", "Schema"],
       },
       {
         role: "Tools & Others",
-        des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
+        des: "I have gained proficiency in using various development tools and technologies to streamline my workflow. I am skilled in version control with Git and GitHub for collaborative projects, and I use Visual Studio Code for efficient coding. Additionally, I have experience with Postman for API testing, and I am familiar with tools like npm, Webpack, and Docker to optimize development and deployment processes.",
         skills: [
           "Git",
           "Github",
@@ -95,14 +100,14 @@ const tabContent = {
   },
   about: {
     title: "About Me",
-    bio: "Passionate software developer with over 5 years of experience in building modern web applications. Committed to writing clean, maintainable code and staying current with emerging technologies. Strong advocate for user-centric design and accessibility.",
+    bio: "I am a passionate MERN stack developer with a strong focus on frontend development. With hands-on experience in React.js, HTML, CSS, and JavaScript, I create dynamic and responsive web applications. I am constantly learning and improving my skills, aiming to build efficient, scalable, and user-friendly solutions for real-world problems",
     Interests: [
       "Open Source Contributing",
       "Tech Blogging",
       "UI/UX Design",
       "Machine Learning",
     ],
-    Languages: ["English (Intermediate)", "Bangla (Native)", "German (Basic)"],
+    Languages: ["English (Intermediate)", "Bangla (Native)", "Hindi (Basic)"],
   },
 };
 const ResumePage = () => {

@@ -41,7 +41,7 @@ const Banner = () => {
             <SocialLinks />
           </div>
         </div>
-        <div className="mt-5">
+        <div className="mt-0 md:mt-5">
           <StatisticsData />
         </div>
       </div>
