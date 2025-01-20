@@ -29,7 +29,6 @@ const ServicesPage = () => {
                 </p>
                 <Link
                   href={item?.href}
-                  target="_blank"
                   className="text-2xl hover:text-lightSky duration-300"
                 >
                   <FaShareSquare />

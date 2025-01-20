@@ -10,7 +10,7 @@ const socials = [
   {
     id: 2,
     icon: <FaLinkedinIn />,
-    path: "",
+    path: "https://www.linkedin.com/in/masum-ahmed-7bb530336",
   },
   {
     id: 3,

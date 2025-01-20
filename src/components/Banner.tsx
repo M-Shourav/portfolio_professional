@@ -9,8 +9,10 @@ import HomeDescription from "./HomeDescription";
 const Banner = () => {
   return (
     <Container className="py-5 flex flex-col lg:flex-row items-center justify-center gap-5">
-      <div className=" order-2 md:order-none flex flex-col items-center md:items-start gap-y-2 ">
-        <p className="text-sm font-normal tracking-wide">Software Developer</p>
+      <div className=" order-2 md:order-none flex flex-col items-start gap-y-2 ">
+        <p className="text-sm font-normal tracking-wide">
+          <span className="text-lightSky">MERN</span> Stack Developer
+        </p>
         <h1 className="text-4xl md:text-6xl font-semibold text-white/90">
           Hello I&#39;m <br />
           <span className="text-lightSky">Masum Ahmed.</span>
@@ -18,7 +20,7 @@ const Banner = () => {
         <div className="min-h-44">
           <HomeDescription />
         </div>
-        <div className="flex flex-col md:flex-row gap-8 items-start">
+        <div className="flex  gap-8 items-start">
           <Button
             asChild
             variant={"outline"}

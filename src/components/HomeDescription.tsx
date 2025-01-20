@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const HomeDescription = () => {
   const description =
-    "As a Software Engineer, I design and build innovative software solutions, solve complex problems, and ensure systems are scalable and user-friendly. From creating web apps to optimizing backend system, I bridge the gap between technology and user needs.";
+    "As a passionate and creative MERN Stack Developer, I aim to leverage my skills in web development to build advanced, user-friendly, and efficient web applications. With one year of experience in frontend development and expertise in modern tools like React.js and Next.js, I am eager to join an organization where I can further expand my knowledge and contribute meaningfully to achieving business goals.";
   const [hasLoaded, setHasLoaded] = useState(false);
   const { displayedText, IsComplete } = useTypeWriter(description, 30);
   useEffect(() => {
