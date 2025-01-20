@@ -173,14 +173,12 @@ const ResumePage = () => {
                     <div className="w-full flex flex-col md:flex-row items-center gap-4 justify-between mb-4">
                       <div className="flex flex-col gap-2">
                         <h3 className="text-lg font-semibold">{item?.role}</h3>
-                        <p className="text-gray-400">{item?.company}</p>
                       </div>
 
                       <div className="flex items-center gap-2 text-gray-400">
                         <span>
                           <FaCalendarAlt />
                         </span>
-                        <p>{item?.period}</p>
                       </div>
                     </div>
                     <p className="text-sm md:text-base mb-4 text-white/90 leading-7 tracking-wide">
