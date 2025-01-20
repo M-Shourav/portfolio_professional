@@ -1,5 +1,11 @@
 "use client";
-import { project_1, project_2, project_3, project_4 } from "@/assets/images";
+import {
+  project_1,
+  project_2,
+  project_3,
+  project_4,
+  project_5,
+} from "@/assets/images";
 import PageLayout from "@/components/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -27,6 +33,21 @@ const project = [
   },
   {
     id: "02",
+    title: "PeopleNTech Clone Project",
+    category: "Frontend",
+    description: `PeopleNTech Clone is a web application designed to 
+    help users enhance their skills through various courses and training 
+    programs. Built using the MERN stack, it provides an interactive 
+    platform for users to track their learning progress and enroll in 
+    courses. The responsive design ensures a seamless experience across 
+    desktops, tablets, and mobile devices.`,
+    stack: ["React", "TailwindCss", "NextAuth", "Redux Toolkit", "ShadCn UI"],
+    liveUrl: "https://peoplentech-masum.vercel.app/",
+    githubUrl: "https://github.com/M-Shourav/Peoplentech_clone",
+    image: project_5,
+  },
+  {
+    id: "03",
     title: "Constructify Project",
     category: "Frontend",
     description: `An interactive weather forecast dashboard that provides real-time weather information and 5-day forecasts for multiple locations. Utilizes a third-party weather API.`,
@@ -36,7 +57,7 @@ const project = [
     image: project_3,
   },
   {
-    id: "03",
+    id: "04",
     title: "Personal Portfolio",
     category: "Full Stack development",
     description: `An interactive weather forecast dashboard that provides real-time weather information and 5-day forecasts for multiple locations. Utilizes a third-party weather API.`,
@@ -46,7 +67,7 @@ const project = [
     image: project_4,
   },
   {
-    id: "04",
+    id: "05",
     title: "Amazon E-commerce project",
     category: "Frontend",
     description: `An interactive weather forecast dashboard that provides real-time weather information and 5-day forecasts for multiple locations. Utilizes a third-party weather API.`,
