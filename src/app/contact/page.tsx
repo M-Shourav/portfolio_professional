@@ -26,7 +26,7 @@ const ContactPage = () => {
             <ContactLeft />
           </div>
           <div
-            className="bg-transparent  w-full h-full
+            className="bg-transparent w-full h-full
          flex flex-col items-start gap-5"
           >
             <Title className="md:text-2xl text-lightSky/80">Contact Info</Title>
