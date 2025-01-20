@@ -3,7 +3,7 @@ import { statsData } from "@/constants";
 import CountUp from "react-countup";
 const StatisticsData = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-7 md:gap-5">
+    <div className="flex flex-wrap md:flex-nowrap gap-7 md:gap-5">
       {statsData.map((item) => (
         <div
           key={item?.num}

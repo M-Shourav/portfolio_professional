@@ -20,7 +20,7 @@ const Banner = () => {
         <div className="min-h-44">
           <HomeDescription />
         </div>
-        <div className="flex  gap-8 items-start">
+        <div className="mt-5 flex flex-wrap md:flex-nowrap gap-8 items-start">
           <Button
             asChild
             variant={"outline"}
