@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ContactRight = () => {
   return (
-    <div className="flex flex-col items-start gap-5">
+    <div className="w-full flex flex-col items-start gap-5">
       <div className="flex items-center gap-4">
         <span
           className="text-lg text-white/80 w-10 h-10 rounded-full flex 
