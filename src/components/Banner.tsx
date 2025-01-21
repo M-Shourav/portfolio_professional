@@ -29,7 +29,7 @@ const Banner = () => {
              hover:text-bodyColor duration-300"
           >
             <Link
-              href={"./resume.pdf"}
+              href={"./masum-ahmed.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 "

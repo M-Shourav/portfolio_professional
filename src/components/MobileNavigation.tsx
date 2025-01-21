@@ -61,7 +61,7 @@ const MobileNavigation = () => {
             <Link
               className="bg-lightSky/10 text-sm px-4 py-2 rounded-md
              hover:bg-lightSky hover:text-bodyColor hoverEffect"
-              href={"/contact"}
+              href={"./masum-ahmed.pdf"}
               target="_blank"
               rel="noopener noreferrer "
             >

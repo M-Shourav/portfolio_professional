@@ -35,12 +35,8 @@ const project = [
     id: "02",
     title: "PeopleNTech Clone Project",
     category: "Frontend",
-    description: `PeopleNTech Clone is a web application designed to 
-    help users enhance their skills through various courses and training 
-    programs. Built using the MERN stack, it provides an interactive 
-    platform for users to track their learning progress and enroll in 
-    courses. The responsive design ensures a seamless experience across 
-    desktops, tablets, and mobile devices.`,
+    description: `I developed a responsive website for PeopleNTech, a leader in skill development and job placement. The site showcases 70+ courses, 200+ mentors, and 10K+ successful students. Built with HTML, CSS, and React.js, it features a user-friendly design, responsive layout,
+     and call-to-action buttons for better engagement.`,
     stack: ["React", "TailwindCss", "NextAuth", "Redux Toolkit", "ShadCn UI"],
     liveUrl: "https://peoplentech-masum.vercel.app/",
     githubUrl: "https://github.com/M-Shourav/Peoplentech_clone",
@@ -83,120 +79,115 @@ const WorkPage = () => {
     handleSlideChange(index);
   };
   return (
-    <div className="py-5 md:py-10 mb-10">
-      <PageLayout>
-        <Carousel
-          opts={{ align: "start", loop: true }}
-          className="w-full"
-          onSelect={() => {
-            const index = 0;
-            if (typeof index === "number") {
-              handleSlideChange(index);
-            }
-          }}
-        >
-          <CarouselContent>
-            {project?.map((projects) => (
-              <CarouselItem key={projects?.id}>
-                <Card className="bg-bodyColor border-lightSky/20">
-                  <CardContent className="p-6">
-                    <div
-                      className="flex flex-col md:flex-row md:items-center
+    <PageLayout className="w-full py-5 px-3 md:px-8 md:py-10 mb-10 clear-start">
+      <Carousel
+        opts={{ align: "start", loop: true }}
+        className="w-full"
+        onSelect={() => {
+          const index = 0;
+          if (typeof index === "number") {
+            handleSlideChange(index);
+          }
+        }}
+      >
+        <CarouselContent>
+          {project?.map((projects) => (
+            <CarouselItem key={projects?.id}>
+              <Card className="bg-bodyColor border-lightSky/20 mt-10">
+                <CardContent className="p-2">
+                  <div
+                    className="flex flex-col md:flex-row md:items-center
                      md:space-x-8 group"
-                    >
-                      {/* description */}
-                      <div className="w-full md:w-1/2 order-2 md:order-1 mb-8 md:mb-0">
-                        <div className=" space-y-3 md:space-y-6 mt-4 md:mt-0">
+                  >
+                    {/* description */}
+                    <div className="w-full  order-2 md:order-1 mb-8 md:mb-0">
+                      <div className=" space-y-4 md:space-y-6 mt-4 md:mt-0">
+                        <div className="flex items-center justify-between gap-5">
                           <h2
                             className="text-3xl md:text-6xl text-transparent text-outline
                              text-outline-hover leading-none font-extrabold"
                           >
                             {projects?.id}
                           </h2>
-                          <h3
-                            className="text-2xl font-semibold leading-none
-                          group-hover:text-hoverColor duration-300"
-                          >
-                            {projects?.title}
-                          </h3>
-                          <p className="text-white/60 tracking-wide leading-7">
-                            {projects?.description}
-                          </p>
-                          <ul
-                            className="flex flex-wrap md:flex-nowrap items-center
-                           gap-2 md:gap-4"
-                          >
-                            {projects?.stack.map((item, index) => (
-                              <li
-                                key={index}
-                                className="text-sm md:text-base text-lightSky/80"
-                              >
-                                {item}
-                                {index !== projects?.stack.length - 1 && ","}
-                              </li>
-                            ))}
-                          </ul>
-                          <span className="w-full h-px bg-gray-600 inline-block" />
-                        </div>
-                        <div className="flex items-center gap-5 mt-4">
-                          <Link
-                            href={projects?.liveUrl}
-                            target="_blank"
-                            className="w-10 h-10 hover:text-hoverColor duration-300 
+                          <div className="flex items-center gap-5">
+                            <Link
+                              href={projects?.liveUrl}
+                              target="_blank"
+                              className="w-8 h-8 md:w-10 md:h-10 hover:text-hoverColor duration-300
                             flex items-center justify-center border border-lightSky/20
                             hover:border-lightSky/50"
-                          >
-                            <span className="text-xl">
-                              <MdOutlineArrowOutward />
-                            </span>
-                          </Link>
-                          <Link
-                            className="w-10 h-10 hover:text-hoverColor duration-300 
+                            >
+                              <span className="text-xl">
+                                <MdOutlineArrowOutward />
+                              </span>
+                            </Link>
+                            <Link
+                              className="w-8 h-8 md:w-10 md:h-10 hover:text-hoverColor duration-300
                             flex items-center justify-center border border-lightSky/20
                              hover:border-lightSky/50"
-                            href={projects?.githubUrl}
-                            target="_blank"
-                          >
-                            <span className="text-xl">
-                              <FiGithub />
-                            </span>
-                          </Link>
+                              href={projects?.githubUrl}
+                              target="_blank"
+                            >
+                              <span className="text-xl">
+                                <FiGithub />
+                              </span>
+                            </Link>
+                          </div>
                         </div>
-                      </div>
-                      {/* image */}
-                      <div className="w-full md:w-1/2 order-1 md:order-2">
-                        <div
-                          className="relative h-64 md:h-96 overflow-hidden rounded-xl
-                        bg-gray-700"
+                        <h3
+                          className="text-2xl font-semibold leading-none
+                          group-hover:text-hoverColor duration-300"
                         >
-                          <Image
-                            src={projects?.image}
-                            alt={projects?.title}
-                            quality={"100"}
-                            priority={true}
-                            className="w-full h-full object-fill"
-                          />
-                        </div>
+                          {projects?.title}
+                        </h3>
+                        <p className="text-white/60 tracking-wide leading-7">
+                          {projects?.description}
+                        </p>
+                        <ul
+                          className="flex flex-wrap md:flex-nowrap items-center
+                           gap-2 md:gap-4"
+                        >
+                          {projects?.stack.map((item, index) => (
+                            <li
+                              key={index}
+                              className="text-sm md:text-base text-lightSky/80"
+                            >
+                              {item}
+                              {index !== projects?.stack.length - 1 && ","}
+                            </li>
+                          ))}
+                        </ul>
+                        <span className="w-full h-px bg-gray-600 inline-block" />
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="absolute right-20 -bottom-10">
-            <CarouselPrevious
-              className=" rounded-full text-white border border-lightSky/30
+                    {/* image */}
+                    <div className="w-full order-1 md:order-2 mb-4 md:mb-0">
+                      <Image
+                        src={projects?.image}
+                        alt={projects?.title}
+                        quality={"100"}
+                        priority={true}
+                        className="w-full  object-cover rounded-xl"
+                      />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className="absolute top-3 right-14">
+          <CarouselPrevious
+            className=" rounded-full text-white border border-lightSky/30
             hover:border-lightSky/50 hover:text-lightSky  duration-300"
-            />
-            <CarouselNext
-              className=" rounded-full text-white border border-lightSky/30
+          />
+          <CarouselNext
+            className=" rounded-full text-white border border-lightSky/30
             hover:border-lightSky/50 hover:text-lightSky  duration-300"
-            />
-          </div>
-        </Carousel>
-      </PageLayout>
-    </div>
+          />
+        </div>
+      </Carousel>
+    </PageLayout>
   );
 };
 

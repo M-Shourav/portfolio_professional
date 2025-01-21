@@ -32,7 +32,7 @@ const Header = () => {
           <Link
             className="bg-lightSky/10 text-sm px-4 py-2 rounded-md
              hover:bg-lightSky hover:text-bodyColor hoverEffect"
-            href={"./resume.pdf"}
+            href={"./masum-ahmed.pdf"}
             target="_blank"
             rel="noopener noreferrer "
           >

@@ -168,7 +168,7 @@ const ResumePage = () => {
                     }}
                     key={index}
                     className=" border border-lightSky/20 rounded-xl
-                  p-6"
+                  p-3"
                   >
                     <div className="w-full flex flex-col md:flex-row items-center gap-4 justify-between mb-4">
                       <div className="flex flex-col gap-2">
@@ -227,17 +227,19 @@ const ResumePage = () => {
                     }}
                     key={index}
                     className=" border border-lightSky/20 rounded-xl
-                  p-6"
+                  p-3"
                   >
                     <div className="w-full flex flex-col md:flex-row items-center gap-4 justify-between mb-4">
                       <div className="flex flex-col gap-2">
-                        <h3 className="text-lg font-semibold">
+                        <h3 className="text-lg font-semibold text-center md:text-start">
                           {item?.degree}
                         </h3>
-                        <p className="text-gray-400">{item?.institute}</p>
+                        <p className="text-gray-400 text-center md:text-start">
+                          {item?.institute}
+                        </p>
                       </div>
 
-                      <div className="flex items-center gap-2 text-gray-400">
+                      <div className="flex items-center gap-2 text-center md:text-start text-gray-400">
                         <span>
                           <FaCalendarAlt />
                         </span>
@@ -290,7 +292,7 @@ const ResumePage = () => {
                     }}
                     key={index}
                     className=" border border-lightSky/20 rounded-xl
-                  p-6"
+                  p-3"
                   >
                     <div className="w-full flex flex-col md:flex-row items-center gap-4 justify-between mb-4">
                       <div className="flex flex-col gap-2">
@@ -332,7 +334,7 @@ const ResumePage = () => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="border border-lightSky/20 rounded-xl p-6"
+                className="border border-lightSky/20 rounded-xl p-3"
               >
                 <div className="flex flex-col gap-y-3">
                   <p className="text-base md:text-lg text-gray-400 tracking-wider leading-7">
