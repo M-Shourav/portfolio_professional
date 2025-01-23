@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Loading from "./Loading";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const ContactLeft = () => {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
@@ -62,13 +63,15 @@ const ContactLeft = () => {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className=" py-10 flex flex-col gap-2 items-center justify-center"
+          className=" py-10 flex flex-col gap-2 items-center justify-center text-center"
         >
-          <p className="text-xl font-semibold text-green-500">{status}</p>
-          <p className="text-base text-green-800 font-semibold max-w-[400px] text-center">
+          <p className="text-[14px] md:text-xl font-semibold text-green-500">
+            {status}
+          </p>
+          <p className="text-[13px] md:text-base text-green-800 font-semibold max-w-[400px] text-center">
             Thank you for your time and will make sure to reach you out on your
             email:
-            <span className="text-lg font-semibold text-green-500">
+            <span className="text-[14px] md:text-lg font-semibold text-green-500">
               {formData?.Email}
             </span>{" "}
             as soon as possible

@@ -8,8 +8,8 @@ import StatisticsData from "./StatisticsData";
 import HomeDescription from "./HomeDescription";
 const Banner = () => {
   return (
-    <Container className="py-5 flex flex-col lg:flex-row items-center justify-center gap-5">
-      <div className=" order-2 md:order-none flex flex-col items-start gap-y-2 ">
+    <Container className="py-5 flex flex-col xl:flex-row items-center justify-center gap-5">
+      <div className=" order-2 xl:order-none flex flex-col items-start gap-y-2 ">
         <p className="text-sm font-normal tracking-wide">
           <span className="text-lightSky">MERN</span> Stack Developer
         </p>
@@ -17,7 +17,7 @@ const Banner = () => {
           Hello I&#39;m <br />
           <span className="text-lightSky">Masum Ahmed.</span>
         </h1>
-        <div className="min-h-44">
+        <div className="min-h-44 xl:min-h-0">
           <HomeDescription />
         </div>
         <div className="mt-5 flex flex-wrap md:flex-nowrap gap-8 items-start">
