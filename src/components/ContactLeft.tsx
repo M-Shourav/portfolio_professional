@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Loading from "./Loading";
 import { motion } from "framer-motion";
-import Link from "next/link";
 const ContactLeft = () => {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
