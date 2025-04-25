@@ -5,6 +5,8 @@ import {
   project_3,
   project_4,
   project_5,
+  project_6,
+  project_7,
 } from "@/assets/images";
 import PageLayout from "@/components/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
@@ -71,6 +73,27 @@ const project = [
     liveUrl: "https://amazon-clone-masum2.vercel.app/",
     githubUrl: "https://github.com/M-Shourav/amazon_cloneyt.git",
     image: project_2,
+  },
+  {
+    id: "06",
+    title: "Blue Berry E-commerce website",
+    category: "Full Stack ",
+    description:
+      "Blue-Berry is a fully responsive e-commerce platform built with React 19 and Next.js 15. It features Sanity.io for efficient database management, Zustand for state management, and Clerk for secure authentication. Designed for seamless user experience, Blue-Berry ensures smooth navigation and scalability.",
+    stack: ["React", "TailwindCss", "NextAuth", "Zustand", "Stripe", "clerk"],
+    liveUrl: "https://blue-berry-yt.vercel.app",
+    githubUrl: "https://github.com/M-Shourav/blue-berry_yt",
+    image: project_7,
+  },
+  {
+    id: "07",
+    title: "Bloggers-Bd Blog website",
+    category: "Full Stack ",
+    description: `Bloggers is a fully responsive Blog platform built with React 19 and Next.js 15. It features Sanity.io for efficient database management and OAuth for secure authentication. Designed for seamless user experience, Blue-Berry ensures smooth navigation and scalability.`,
+    stack: ["React", "NextJs 15", "TailwindCss", "NextAuth"],
+    liveUrl: "https://blogers-bd.vercel.app",
+    githubUrl: "https://github.com/M-Shourav/blogers",
+    image: project_6,
   },
 ];
 
