@@ -6,6 +6,7 @@ import project_4 from "@/assets/images/project_4.png";
 import project_5 from "@/assets/images/project_5.png";
 import project_6 from "@/assets/images/project_6.png";
 import project_7 from "@/assets/images/project_7.png";
+import project_8 from "@/assets/images/project_8.png";
 
 export {
   profilePhoto,
@@ -16,4 +17,5 @@ export {
   project_5,
   project_6,
   project_7,
+  project_8,
 };
